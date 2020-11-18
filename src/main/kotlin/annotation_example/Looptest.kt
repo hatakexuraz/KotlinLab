@@ -25,4 +25,15 @@ class Looptest {
                 print("$i, ")
             }
         }
+
+        someMethod()
     }
+
+fun someMethod() {
+    val property = null
+    property?.let {
+        println("$property")
+    } ?: run {
+        println("property: Null")
+    }
+}
